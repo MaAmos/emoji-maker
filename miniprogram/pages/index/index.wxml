@@ -1,0 +1,4 @@
+<view class="container">
+  <text class="title">欢迎使用表情制作器</text>
+  <button class="button" bindtap="goToImageToGif">转换图片为GIF</button>
+</view>

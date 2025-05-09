@@ -1,0 +1,19 @@
+{
+  "projectname": "emoji-maker",
+  "description": "A mini program for creating and converting images to GIFs.",
+  "appid": "your-app-id",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.10.0",
+  "packOptions": {
+    "ignore": []
+  },
+  "cloudfunctionRoot": "cloudfunctions/"
+}

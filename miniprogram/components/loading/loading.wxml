@@ -1,0 +1,6 @@
+<loading.wxml>
+<view class="loading-container">
+  <image class="loading-icon" src="../../assets/loading.gif" mode="aspectFit"></image>
+  <text class="loading-text">加载中...</text>
+</view>
+</loading.wxml>

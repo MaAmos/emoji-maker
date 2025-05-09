@@ -1,0 +1,36 @@
+/emoji-maker/emoji-maker/miniprogram/pages/imageToGif/imageToGif.wxss
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.image-preview {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.loading {
+  font-size: 16px;
+  color: #333;
+}
+
+.button {
+  background-color: #007aff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}

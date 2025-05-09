@@ -1,0 +1,19 @@
+{
+  "name": "convertToGif",
+  "version": "1.0.0",
+  "description": "Cloud function to convert uploaded images to GIF format.",
+  "main": "index.js",
+  "dependencies": {
+    "gifencoder": "^2.0.0",
+    "request": "^2.88.2",
+    "@tensorflow/tfjs-node": "^3.8.0"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

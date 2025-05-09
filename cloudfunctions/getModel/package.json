@@ -1,0 +1,17 @@
+{
+  "name": "getModel",
+  "version": "1.0.0",
+  "description": "Cloud function for retrieving model URLs.",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "^2.4.0"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
