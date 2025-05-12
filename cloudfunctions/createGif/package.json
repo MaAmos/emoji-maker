@@ -1,0 +1,17 @@
+{
+    "name": "createGif",
+    "version": "1.0.0",
+    "description": "云函数用于生成GIF动画",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "wx-server-sdk": "~2.6.3",
+      "sharp": "^0.32.1",
+      "gifencoder": "^2.0.1",
+      "canvas": "^2.11.0"
+    }
+  }

@@ -1,23 +1,51 @@
-<attachment id="file:imageToGif.wxml">
 <view class="container">
   <view class="header">
-    <text class="title">图片转换为GIF</text>
+    <text class="title">表情GIF制作</text>
   </view>
 
   <view class="content">
-    <button bindtap="chooseImage" class="choose-button">选择图片</button>
-    <view wx:if="{{hasImage}}">
-      <image src="{{imagePath}}" mode="aspectFit" class="selected-image"></image>
-      <button bindtap="convertToGif" class="convert-button">转换为GIF</button>
+    <view class="image-container">
+      <image
+        wx:if="{{hasImage}}"
+        src="{{imagePath}}"
+        mode="aspectFit"
+        class="preview-image"
+        bindtap="chooseImage"
+      ></image>
+      <view wx:else class="placeholder" bindtap="chooseImage">
+        <text>点击选择图片</text>
+      </view>
     </view>
-    <view wx:if="{{loading}}">
-      <loading class="loading" text="{{loadingText}}"></loading>
+
+    <view wx:if="{{gifPath}}" class="gif-container">
+      <image
+        src="{{gifPath}}"
+        mode="aspectFit"
+        class="gif-preview"
+        bindtap="previewGif"
+      ></image>
     </view>
-    <view wx:if="{{gifPath}}">
-      <text class="status">{{status}}</text>
-      <image src="{{gifPath}}" mode="aspectFit" class="gif-image"></image>
-      <button bindtap="saveGif" class="save-button">保存GIF到相册</button>
-    </view>
+
+    <view class="status-text">{{statusMessage}}</view>
+  </view>
+
+  <view class="footer">
+    <button
+      type="primary"
+      bindtap="convertToGif"
+      disabled="{{!hasImage || loading}}"
+      loading="{{loading}}"
+    >
+      {{loading ? loadingText : '转换为GIF'}}
+    </button>
+
+    <button
+      wx:if="{{gifPath}}"
+      type="default"
+      bindtap="saveGif"
+      class="save-button"
+    >
+      保存到相册
+    </button>
   </view>
 </view>
-</attachment>
